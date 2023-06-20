@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-qszr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "启山智软eslint语法规则",
   "main": "index.js",
   "private": false,
