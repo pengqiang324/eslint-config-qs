@@ -1,9 +1,13 @@
 {
-  "name": "eslint-config-qs",
+  "name": "eslint-config-qszr",
   "version": "1.0.0",
   "description": "启山智软eslint语法规则",
   "main": "index.js",
-  "private": "false",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pengqiang324/eslint-config-qs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +15,9 @@
     "eslint-config-qs"
   ],
   "author": "James324",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pengqiang324/eslint-config-qs/issues"
+  },
+  "homepage": "https://github.com/pengqiang324/eslint-config-qs#readme"
 }
