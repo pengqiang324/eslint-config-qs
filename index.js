@@ -1,13 +1,15 @@
-/**
- * @description: eslint代码检查规则
- * @author: James324
- * @date: 2023-06-20 17:52:31
+/*
+ * @Author: James324
+ * @Date: 2023-06-20 17:51:16
+ * @LastEditors: James324
+ * @LastEditTime: 2023-06-21 16:13:33
+ * @Description: eslint代码检查规则
  */
 
 module.exports = {
-    root: true,                // 停止在父级目录中寻找 .eslintrc.* | package.json 文件里的 eslintConfig
+    root: true,               // 停止在父级目录中寻找 .eslintrc.* | package.json 文件里的 eslintConfig
     parserOptions: {            // 解析器选项。帮助 ESLint 确定什么是解析错误，所有语言选项默认都是 false
-        ecmaVersion: 2023,      // 支持 ES2023 规范
+        ecmaVersion: 'latest',      // 支持 ESscript 最新规范
         sourceType: 'module',   // script (默认) | module（如果你的代码是 ECMAScript 模块)
         ecmaFeatures: {         // 想使用的额外的语言特性
             'jsx': true         // 启用 JSX
@@ -71,7 +73,7 @@ module.exports = {
         'new-parens': 2,                              // 要求调用无参构造函数时有圆括号
         'no-array-constructor': 2,                    // 禁用 Array 构造函数
         'no-caller': 2,                               // 禁用 arguments.caller 或 arguments.callee
-        'no-console': 1,                              // 禁用 console
+        'no-console': 2,                              // 禁用 console
         'no-class-assign': 2,                         // 禁止修改 类声明的变量
         'no-cond-assign': 2,                          // 禁止条件表达式中出现赋值操作符
         'no-const-assign': 2,                         // 禁止修改 const 声明的变量
@@ -168,7 +170,7 @@ module.exports = {
             'avoidEscape': true,                      // 允许字符串使用单引号或双引号，只要字符串中包含了一个其它引号，否则需要转义
             'allowTemplateLiterals': true             // 允许字符串使用反勾号
         }], 
-        'semi': [2, 'aways'],                         // 要求或禁止使用分号代替 ASI (always|never)
+        'semi': [2, 'always'],                         // 要求或禁止使用分号代替 ASI (always|never)
         'semi-spacing': [2, {                         // 强制分号之前和之后使用一致的空格。 false: 禁止有空格 | true: 强制有空格
             'before': false,
             'after': true
